@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    color: var(--grayish-blue);
+    background: var(--very-light-gray);
+    font-family: var(--poppins);
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}

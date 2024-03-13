@@ -1,0 +1,83 @@
+@use 'attribution';
+@use 'variables';
+@use 'media-queries' as *;
+@use 'bases';
+
+.container {
+    padding: 10rem 3rem;
+
+    .header {
+        text-align: center;
+        padding-bottom: 7rem;
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 200;
+        }
+
+        .subtitle {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--very-dark-blue);
+            padding-bottom: 1rem;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+
+        @include md {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            padding: 2rem;
+            box-shadow: 0 5px 20px var(--grayish-blue);
+            margin-bottom: 3rem;
+            border-radius: 1rem;
+
+            @include md {
+                height: 22rem;
+            }
+
+            @include md {
+                width: 30rem;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &-cyan {
+                border-top: 5px solid var(--cyan);
+            }
+
+            &-red {
+                border-top: 5px solid var(--red);
+            }
+
+            &-orange {
+                border-top: 5px solid var(--orange);
+            }
+
+            &-blue {
+                border-top: 5px solid var(--blue);
+            }
+
+            .card-title {
+                font-weight: 600;
+                color: var(--very-dark-blue);
+                font-size: 1.8rem;
+            }
+
+            .card-img {
+                display: flex;
+                justify-content: end;
+                padding: 3rem 0 1rem 0;
+            }
+        }
+    }
+}
