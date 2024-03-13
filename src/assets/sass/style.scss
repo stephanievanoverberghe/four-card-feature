@@ -5,6 +5,14 @@
 
 .container {
     padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
+    @include lg {
+        padding: 10rem;
+    }
 
     .header {
         text-align: center;

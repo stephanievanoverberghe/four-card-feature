@@ -64,6 +64,15 @@ img {
 
 .container {
   padding: 10rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 10rem;
+  }
 }
 .container .header {
   text-align: center;
